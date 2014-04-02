@@ -1,0 +1,180 @@
+@font-face {
+font-family: OswaldLight;
+src: url(/includes/fonts/Oswald-Light.ttf);
+}
+
+@font-face {
+font-family: OswaldRegular;
+src: url(/includes/fonts/Oswald-Regular.ttf);
+}
+
+
+@font-face {
+font-family: OswaldBold;
+src: url(/includes/fonts/Oswald-Bold.ttf);
+}
+
+
+
+/* Begin Typography & Colors */
+body {
+    background-image: url(http://subtlepatterns.com/patterns/skulls.png); background-position: initial initial; background-repeat: initial initial;
+    background-color: #fff;
+    margin: 0;
+    padding: 0; 
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, Verdana, sans-serif;
+    line-height: 30px;
+    text-align: center;
+    color: #444;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+ul,ol{
+    list-style-type:none;
+    margin:0;
+    text-align:left;
+    display: inline-block;
+}
+
+a {
+    color: #FF3F00;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    height: 2px;
+    background-color: #DDDDDD;
+    width: 800px;
+    border:0;
+    margin-bottom: 50px;
+}
+
+h2 {
+    font: 42px/60px 'OswaldLight';
+    padding: 20px 0px 20px 0px;
+    margin: 0px;
+    text-indent: 0px;
+    display: inline-block;
+    margin-top: -20px;
+}
+
+h2:hover {
+    background:url('/images/labelCopy.png') no-repeat left top;
+    padding-top: 20px;
+    margin-top: -20px;
+}
+
+.textH2 {
+    font: 42px/60px 'OswaldLight';
+    padding: 0px 0px 30px 0px;
+    margin: 0px;
+    text-indent: 0px;
+    display: inline-block;
+}
+
+.textsmall {
+    font-size: 14px;
+    color: #999999;
+}
+
+#readStatus {
+    display: inline-block;
+    border-radius: 15px;
+    background-color: #ffffff;
+    padding: 0 16px 0 16px;
+    color: #999999;
+    font: 300 36px/70px 'OswaldLight';
+}
+
+.opening {
+    padding: 60px 0 90px 0;
+    width: 800px;
+    font-size: 30px;
+    text-align: left;
+    margin:0 auto;
+    font: 42px/70px 'OswaldLight';
+    color: #777777;
+}
+.openingBig {
+    font: 90px/140px 'OswaldBold';
+}
+
+
+.textGood {
+    color: #FF9999;
+    /*text-shadow: 0px 0px 5px #000000;*/
+}
+
+.textStrong {
+    color: #444444;
+    font-family: 'OswaldBold';
+
+}
+.description {
+    text-indent: 0px;
+    display: inline-block;
+
+}
+.anchor {
+    padding-top: 30px;
+    border: 0;
+    outline: 0;
+    display: inline-block;
+    padding-right: 5px;
+    margin-top: 10px;
+}
+
+.anchortitle, .anchortitle span {
+    color: inherit;
+}
+.anchortitle:hover   {
+    color: #666666 !important;
+    text-decoration: none;
+}
+
+.backgroundBox {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 1em;
+  background-image: url(http://subtlepatterns.com/patterns/sos.png); background-position: initial initial; background-repeat: initial initial;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.25), 0 0 50px rgba(0,0,0,0.1) inset;
+  border-radius: 0%     0%     0%     0% /     0%     0%     0%     0%;
+}
+.backgroundBox:before {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    top: -50px;
+    right: -50px;
+    width: 15%;
+    height: 15%;
+    border-radius: 0 0% 0 0;
+    box-shadow: 0px -0px 0px rgba(0,0,0,0);
+    -webkit-transform: rotate(2deg) translate(-14px,20px) skew(-20deg);
+     -moz-transform: rotate(2deg) translate(-14px,20px) skew(-20deg);
+     -ms-transform: rotate(2deg) translate(-14px,20px) skew(-20deg);
+     -o-transform: rotate(2deg) translate(-14px,20px) skew(-20deg);
+     transform: rotate(2deg) translate(-14px,20px) skew(-20deg);
+    }
+.backgroundBox:after {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    top: -50px;
+    left: -50px;
+    width: 15%;
+    height: 15%;
+    border-radius: 0% 0 0 0;
+    box-shadow: -0px -0px 0px rgba(0,0,0,0);
+    -webkit-transform: rotate(2deg) translate(14px,20px) skew(20deg);
+     -moz-transform: rotate(2deg) translate(14px,20px) skew(20deg);
+     -ms-transform: rotate(2deg) translate(14px,20px) skew(20deg);
+     -o-transform: rotate(2deg) translate(14px,20px) skew(20deg);
+     transform: rotate(2deg) translate(14px,20px) skew(20deg);
+    }
