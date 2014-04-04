@@ -91,7 +91,7 @@ h2:hover {
 }
 
 .label {
-    padding: 0px 0 40px 0;
+    padding: 0 0 40px 0;
     width: 800px;
     font-size: 30px;
     text-align: left;
@@ -103,6 +103,14 @@ h2:hover {
     font: 90px/140px 'OswaldBold';
 }
 
+h3{
+    display: inline-block;
+    padding: 0 40px 0 10px;
+}
+
+input:checked + label{
+    color: red;
+}
 
 .textGood {
     color: #FF9999;
