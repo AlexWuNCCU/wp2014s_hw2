@@ -1,28 +1,10 @@
-@font-face {
-font-family: OswaldLight;
-src: url(/includes/fonts/Oswald-Light.ttf);
-}
-
-@font-face {
-font-family: OswaldRegular;
-src: url(/includes/fonts/Oswald-Regular.ttf);
-}
-
-
-@font-face {
-font-family: OswaldBold;
-src: url(/includes/fonts/Oswald-Bold.ttf);
-}
-
-
-
 /* Begin Typography & Colors */
 body {
     background-image: url(http://subtlepatterns.com/patterns/skulls.png); background-position: initial initial; background-repeat: initial initial;
     background-color: #fff;
     margin: 0;
     padding: 0; 
-    font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, Verdana, sans-serif;
+    font-family: "Lucida Sans Unicode", Tahoma, Verdana, sans-serif;
     line-height: 30px;
     text-align: center;
     color: #444;
@@ -31,32 +13,46 @@ body {
     padding: 0px;
 }
 
-ul,ol{
+.title{
     list-style-type:none;
     margin:0;
+    text-align:center;
+    font-weight: 800;
+
+}
+
+.summary{
+    list-style-type:circle;
     text-align:left;
-    display: inline-block;
+}
+
+.summaryHr{
+     width: 400px;
+     height: 2px;
+}
+
+.text{
+    font-weight: normal;
+    text-align:center;
 }
 
 a {
     color: #FF3F00;
     text-decoration: none;
 }
-a:hover {
-    text-decoration: underline;
-}
 
 hr {
-    height: 2px;
+    height: 5px;
     background-color: #DDDDDD;
     width: 800px;
     border:0;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+     border-radius: 15px;
 }
 
 h2 {
     font: 42px/60px 'OswaldLight';
-    padding: 20px 0px 20px 0px;
+    padding: 20px 0px 0px 0px;
     margin: 0px;
     text-indent: 0px;
     display: inline-block;
@@ -64,9 +60,12 @@ h2 {
 }
 
 h2:hover {
-    background:url('/images/labelCopy.png') no-repeat left top;
     padding-top: 20px;
-    margin-top: -20px;
+        margin-top: -20px;
+}
+
+.summary{
+    font-weight: 600;
 }
 
 .textH2 {
@@ -91,8 +90,8 @@ h2:hover {
     font: 300 36px/70px 'OswaldLight';
 }
 
-.opening {
-    padding: 60px 0 90px 0;
+.label {
+    padding: 0px 0 40px 0;
     width: 800px;
     font-size: 30px;
     text-align: left;
@@ -100,7 +99,7 @@ h2:hover {
     font: 42px/70px 'OswaldLight';
     color: #777777;
 }
-.openingBig {
+.labelBig {
     font: 90px/140px 'OswaldBold';
 }
 
@@ -121,12 +120,10 @@ h2:hover {
 
 }
 .anchor {
-    padding-top: 30px;
     border: 0;
     outline: 0;
     display: inline-block;
     padding-right: 5px;
-    margin-top: 10px;
 }
 
 .anchortitle, .anchortitle span {
